@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="/form.css"/>
+        <title>Form To Do List </title>
+    </head>
+<body>
+     <main class="main__page">
+          <section class="hero">
+              <div class="container-hero">
+                 <div class="card">
+                     <h2 class="card__title">Please click on it</h2>
+                     <button class="card-btn"><span>Open Form </span><i class="fa-solid fa-arrow-right"></i></button>
+                 </div>
+              </div>
+          </section>
+          <section class="pop">
+               <div class="pop__container"><i class="fas fa-times" id="fak"></i>
+                   <form action="#" class="pop__form">
+                       <h2 class="pop__title">The To Do-List</h2>
+                       <p class="content">
+                        This contains all the materials of the Layout
+                        with the essences of humans like that of beings who live in the Spaces
+                       </p>
+                       <div class="pop__preview">
+                          <span class="pop-span">Creons des To do List bien oragniser</span>
+                          <fieldset>
+                             <legend>TO DO List</legend>
+                             <ul class="list">
+                                 <li class="item"><div class="name">Job Lodo K</div>
+                                   <time class="date">20.12.2022</time><i class="fas fa-times"></i></li>
+                                 <li class="item"><div class="name">Cdo-Global</div>
+                                   <time class="date">20.12.2022</time><i class="fas fa-times"></i></li>
+                                 <li class="item"><div class="name">Company</div>
+                                   <time class="date">20.12.2022</time><i class="fas fa-times"></i></li>
+                                 <input type="text" placeholder="write your name"/>
+                             </ul>
+                          </fieldset>
+                       </div>
+                   </form>
+               </div>
+          </section>
+     </main>
+
+<script>
+      Pop        = document.querySelector('.pop')
+      ButtonMenu =  document.querySelector('.card-btn');
+      CloseMenu  = document.querySelector('#fak');
+
+      ButtonMenu.addEventListener('click', () => {
+          Pop.style.display = 'flex';
+      });
+
+      CloseMenu.addEventListener('click' , () => {
+        Pop.style.display= 'none';
+      })
+</script>
+</body>
+</html>

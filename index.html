@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+        <link rel="stylesheet" href="./main.css"/>
+        <title>Skelet html</title>
+    </head>
+<body>
+     <div class="container">
+         <!-- <h2 class="title">Faire Du Skelet</h2> -->
+         <ul class="list">
+            <li class="item">
+                <div class="item-image skeleton"></div>
+                <div class="item-text">
+                    <h3 class="item-title skeleton">Skeleton SpaceX</h3>
+                    <p class="item_content skeleton">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quaerat perferendis accusantium consectetur cupiditate suscipit ullam quis ut atque nost.
+                    </p>
+                    <button class="item-button skeleton">Contact Us</button>
+                </div>
+            </li>
+            <li class="item">
+                <div class="item-image skeleton"></div>
+                <div class="item-text">
+                    <h3 class="item-title skeleton">Skeleton SpaceX</h3>
+                    <p class="item_content skeleton">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quaerat perferendis accusantium consectetur cupiditate suscipit ullam quis ut atque nost.
+                    </p>
+                    <button class="item-button skeleton">Contact Us</button>
+                </div>
+            </li>
+         </ul>
+     </div>
+<script>
+    let allSkeleton = document.querySelectorAll('.skeleton');
+    
+    // setTimeout(() => {
+        window.addEventListener("load" , function() {
+         allSkeleton.forEach(item => {
+            item.classList.remove('skeleton');
+          })
+       })
+    // }, 50);
+    
+
+      console.log(allSkeleton)
+</script>
+</body>
+</html>

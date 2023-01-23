@@ -1,1 +1,1 @@
-# SkeletonApp
+# Skeleton
